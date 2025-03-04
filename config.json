@@ -1,0 +1,49 @@
+{
+    "http": {
+        "port": 9100,
+        "server": "127.0.0.1"
+    },
+    "svc": [
+        {
+            "name": "nginx",
+            "start": "00:00:00",
+            "end": "00:00:00",
+            "restart": "00:06:00",
+            "required_workday": false,
+            "dependent": [
+                "web_app"
+            ]
+        },
+        {
+            "name": "redis_ms",
+            "start": "00:00:00",
+            "end": "00:00:00",
+            "restart": "00:04:00",
+            "required_workday": false,
+            "dependent": [
+                "web_app"
+            ]
+        }
+    ],
+    "dust": [
+        {
+            "ext": [
+                ".log",
+                ".seq"
+            ]
+        },
+        {
+            "ext": [
+                ".json"
+            ],
+            "is_cache": true
+        },
+        {
+            "ext": [
+                ".log"
+            ],
+			"delete_empty_dir": true,
+            "dir": "/home/service/app"
+        }
+    ]
+}
