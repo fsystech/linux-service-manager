@@ -110,5 +110,3 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ---
-
-*Note*: This README is based on the provided source code snippets and general practices. For detailed information, refer to the actual source code and documentation within the repository. 
