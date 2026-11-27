@@ -571,7 +571,7 @@ The exact `sdbus-c++` build/install procedure depends on the version and distrib
 Clone the repository and configure a Release build:
 
 ```bash
-git clone https://github.com/rajibchy/linux-service-manager.git
+git clone https://github.com/fystech/linux-service-manager.git
 cd linux-service-manager
 
 cmake -S . -B build \
@@ -845,4 +845,4 @@ sudo systemctl reset-failed nginx.service
 
 This project is distributed under the [MIT License](LICENSE).
 
-Copyright (c) 2025 Rajib Chowdhury.
+Copyright (c) FSys Tech Ltd.
